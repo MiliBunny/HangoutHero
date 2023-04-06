@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  price: MyString
+  category: MyString
+  cuisine: MyString
+  dietary_restrictions: MyString
+  entertainment_type: MyString
+  physical_activity: MyString
+  shopping_venue: MyString
+
+two:
+  title: MyString
+  price: MyString
+  category: MyString
+  cuisine: MyString
+  dietary_restrictions: MyString
+  entertainment_type: MyString
+  physical_activity: MyString
+  shopping_venue: MyString
