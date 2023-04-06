@@ -1,3 +1,15 @@
 <h1>User Profile Page</h1>
 
 <h2>Welcome, <%= @user.email %></h2>
+
+<p>Physical Activity: <%= @user.physical_activity %></p>
+<p><strong>Cuisine</strong>: <%= @user.cuisine %></p>
+<p><strong>Entertainment</strong>: <%= @user.entertainment_type %></p>
+<p><strong>Dietary</strong>: <%= @user.dietary_restrictions %></p>
+<p><strong>Shopping</strong>: <%= @user.shopping_venue %></p>
+<p><strong>Price</strong>: <%= @user.price %></p>
+
+
+<p>Place: <% @places.each do |p| %>
+	<%= p.title %>
+	<% end %>

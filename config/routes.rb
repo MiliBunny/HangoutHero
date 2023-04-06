@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-    devise_for :users
-    resources :user_preferences
+devise_for :users
+
+    resource :user_preference
   resources :places
   root to: "places#index"
   resources :users

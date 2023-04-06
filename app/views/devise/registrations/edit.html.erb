@@ -7,7 +7,26 @@
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
   </div>
-
+  <div class="field">
+    <%= f.label :physical_activity %><br />
+    <%= f.text_field :physical_activity %>
+  </div>
+   <div class="field">
+    <%= f.label :dietary_restrictions %><br />
+    <%= f.text_field :dietary_restrictions %>
+  </div>
+   <div class="field">
+    <%= f.label :entertainment_type %><br />
+    <%= f.text_field :entertainment_type %>
+  </div>
+   <div class="field">
+    <%= f.label :cuisine %><br />
+    <%= f.text_field :cuisine %>
+  </div>
+     <div class="field">
+    <%= f.label :price %><br />
+    <%= f.text_field :price %>
+  </div>
   <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
     <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
   <% end %>

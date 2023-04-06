@@ -12,8 +12,17 @@
 
   <body>
     <header>
-      <%= button_to "Sign Out", destroy_user_session_path, method: :delete %>
+    <% if user_signed_in? %>
+              <%= button_to "Sign Out", destroy_user_session_path, method: :delete %>
+                     <%= link_to "Edit", edit_user_registration_path %>
 
+      <% else %>
+
+       <%= link_to "Sign in", new_user_session_path %>
+        <%= link_to "Register", new_user_registration_path %>
+
+      <% end %>
+       
     </header>
      <p class="notice"><%= notice %></p>
       <p class="alert"><%= alert %></p>

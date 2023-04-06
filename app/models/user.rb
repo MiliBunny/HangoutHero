@@ -7,4 +7,5 @@ class User < ApplicationRecord
     has_one :user_preference
       accepts_nested_attributes_for :user_preference
 
+
 end

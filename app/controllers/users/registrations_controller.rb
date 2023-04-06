@@ -24,6 +24,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
       :password,
       :password_confirmation,
       :remember_me,
+      :physical_activity,
       user_preference_attributes: %i[vehicle price cuisine dietary_restrictions entertainment_type physical_activity shopping_venue]
     ]
   end
@@ -83,4 +84,4 @@ end
   # def after_inactive_sign_up_path_for(resource)
   #   super(resource)
   # end
-end
+
