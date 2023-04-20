@@ -8,8 +8,11 @@
     <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control" %>
   </div>
     <div class="field">
-    <%= f.label :physical_activity %><br />
-    <%= f.text_field :physical_activity, class: "form-control" %>
+      <%= f.label :physical_activity %><br />
+     <%= f.radio_button :physical_activity, "High" %>High
+      <%= f.radio_button :physical_activity, "Medium" %>Medium
+      <%= f.radio_button :physical_activity, "Low" %>Low
+      
   </div>
    <div class="field">
     <%= f.label :dietary_restrictions %><br />

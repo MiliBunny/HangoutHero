@@ -1,4 +1,6 @@
 class UsersController < ApplicationController
+    CUISINE = %i[Asian Indian American]
+
   def show
     @user = User.find(params[:id])
 

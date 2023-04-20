@@ -11,21 +11,27 @@
   </head>
 
   <body>
-    <header>
-    <% if user_signed_in? %>
-              <%= button_to "Sign Out", destroy_user_session_path, method: :delete %>
-                     <%= link_to "Edit", edit_user_registration_path %>
+    <div class="entire-page">
+      <header>
+        <navbar>
+            <% if user_signed_in? %>
+                <%= button_to "Sign Out", destroy_user_session_path, method: :delete %>
+                  <%= link_to "Edit", edit_user_registration_path %>
 
-      <% else %>
+            <% else %>
 
-       <%= link_to "Sign in", new_user_session_path %>
-        <%= link_to "Register", new_user_registration_path %>
+         <%= link_to "Sign in", new_user_session_path %>
+          <%= link_to "Register", new_user_registration_path %>
 
-      <% end %>
-       
-    </header>
-     <p class="notice"><%= notice %></p>
-      <p class="alert"><%= alert %></p>
-    <%= yield %>
+        <% end %>
+         </navbar>
+      </header>
+       <p class="notice"><%= notice %></p>
+        <p class="alert"><%= alert %></p>
+      <%= yield %>
+    </div><!-- entire page-->
+    <footer class="site-footer">
+        this is where the footer gets added and styled
+    </footer>
   </body>
 </html>
