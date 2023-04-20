@@ -12,7 +12,11 @@
  *
  *= require_tree .
  *= require_self
+
  */
+ @import "bootstrap";
+
+$primary: #c11;
 
 body {
     font-family: 'Helvetica', sans-serif;
